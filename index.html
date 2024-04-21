@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Link Custom CSS (if any) -->
+    <style>
+        body {
+            background-color: #71b092;
+            font-family: Arial, sans-serif;
+            color: #020202;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .jumbotron {
+            background-color: #4c95de;
+            color: #fff;
+            padding: 60px 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+        }
+        .jumbotron h1 {
+            font-size: 48px;
+            font-weight: bold;
+        }
+        .jumbotron p {
+            font-size: 18px;
+        }
+        .btn-custom {
+            background-color: #2d9a2d;
+            border-color: #28a745;
+            color: #fff;
+            font-weight: bold;
+        }
+        .btn-custom:hover {
+            background-color: #28a745;
+            border-color: #4c95de;
+        }
+        .badge-custom {
+            background-color: #ffc107;
+            color: #333;
+            font-weight: bold;
+        }
+        .table-custom th,
+        .table-custom td {
+            border-color: #dee2e6;
+        }
+        .table-custom th {
+            background-color: #007bff;
+            color: #fff;
+            font-weight: bold;
+        }
+        .form-control-custom {
+            border-color: #17a2b8;
+            border-radius: 20px;
+        }
+        .form-control-custom:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+        }
+        /* Additional styles for panels */
+        .panel {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive container -->
+    <div class="container">
+
+        <!-- Jumbotron -->
+        <div class="jumbotron text-center">
+            <h1 class="display-4">Akshat's Website!</h1>
+            <p class="lead">This is a simple and stylish website created using Bootstrap.</p>
+            <hr class="my-4">
+            <p>It features buttons, badges, tables, forms, and many more things!</p>
+            <a class="btn btn-custom btn-lg" href="#" role="button">Let's Get Started</a>
+        </div>
+
+        <!-- Responsive grid layout -->
+        <div class="row">
+            <div class="col-md-6">
+                <p>Level 1.</p>
+            </div>
+            <div class="col-md-6">
+                <p>Level 2.</p>
+            </div>
+        </div>
+
+        <!-- Responsive visibility -->
+        <div class="d-none d-md-block">
+            <p>This content is visible on medium-sized screens and larger. Ex. Laptops</p>
+        </div>
+        <div class="d-md-none">
+            <p>This content is visible only on small-sized screens.</p>
+        </div>
+
+        <!-- Additional Bootstrap Features -->
+
+        <!-- Badges -->
+        <div class="mt-4">
+            <span class="badge badge-custom mr-2">New</span>
+            <span class="badge badge-custom">Old</span>
+        </div>
+
+        <!-- Table -->
+        <div class="mt-4">
+            <table class="table table-custom">
+                <thead>
+                    <tr>
+                        <th scope="col">Student ID</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">FS23AI013</th>
+                        <td>Akshat Yadav</td>
+                        <td>akshatyadav2527@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FS23AI010</th>
+                        <td>Rohit Dhage</td>
+                        <td>rohitdhage1254@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FS23AI009</th>
+                        <td>Aaryan Ghadi</td>
+                        <td>ghadiaaryan12@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">FS23AI003</th>
+                        <td>Rashid Patel</td>
+                        <td>7rashidpatel@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Form -->
+        <div class="mt-4">
+            <form>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control form-control-custom" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control form-control-custom" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-custom">Submit</button>
+            </form>
+        </div>
+
+        <!-- Images -->
+        <div class="mt-4">
+            <img src="image-1.jpeg" alt="Image 1">
+            <img src="image-2.jpeg" alt="Image 2">
+        </div>
+
+        <!-- Links to other pages -->
+        <div class="mt-4">
+            <a href="page1.html" class="btn btn-info mr-2">Go to Page 1</a>
+            <a href="page2.html" class="btn btn-info">Go to Page 2</a>
+        </div>
+
+    </div>
+
+    <!-- Include Bootstrap JS scripts at the end of the body for faster loading -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

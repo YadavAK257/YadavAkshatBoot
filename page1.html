@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timepass * 2</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #63bd90;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #bd1319;
+        }
+        p {
+            font-size: 18px;
+        }
+        .form-control {
+            border-radius: 20px;
+        }
+        .btn {
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        a {
+            display: block;
+            margin-top: 20px;
+            color: #bd1319;
+        }
+        a:hover {
+            color: #bd1319;
+        }
+    </style>
+</head>
+<body>
+    <!-- Responsive container -->
+    <div class="container">
+
+        <!-- Responsive grid layout -->
+        <div class="row">
+            <div class="col-md-6">
+                <p>Column 1</p>
+            </div>
+            <div class="col-md-6">
+                <p>Column 2</p>
+            </div>
+        </div>
+
+        <!-- Responsive visibility -->
+        <div class="d-none d-md-block">
+            <p>This content is visible on medium-sized screens and larger.</p>
+        </div>
+        <div class="d-md-none">
+            <p>This content is visible only on small-sized screens.</p>
+        </div>
+
+    </div>
+    <!-- Page content goes here -->
+    <div class="container">
+        <h1>Welcome to Page 1.</h1>
+        <p>There is not much content, but you can find a wonderful photo a panda chewing on a bamboooo!<span class="badge badge-primary">New</span></p>
+        <p>The Tale of the Two Lost Puppies.<span class="badge badge-primary">Old</span></p>
+
+        <!-- Buttons -->
+        <button type="button" class="btn btn-primary">Do Not</button>
+        <button type="button" class="btn btn-secondary">Click!</button>
+
+        <!-- Example images -->
+        <img src="image-3.jpeg" alt="Image 3">
+        <img src="image-4.jpeg" alt="Image 4">
+
+        <!-- Links to other pages -->
+        <a href="index.html">Go to Index Page</a>
+        <a href="page2.html">Go to Page 2</a>
+    </div>
+
+    <!-- Include Bootstrap JS scripts at the end of the body for faster loading -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
